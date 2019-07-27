@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/app.js --exec \"yarn run lint && node\"",
+    "lint": "./node_modules/.bin/eslint **/*.js"
+  },
   "dependencies": {
     "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "global": "^4.4.0",
     "nodemon": "^1.19.1"
   }
 }

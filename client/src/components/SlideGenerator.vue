@@ -39,13 +39,13 @@ export default {
     }
   },
   methods: {
-    async authorize () {
-      const response = await SlidesApi.authorize({
+     authorize () {
+      /* const response = await SlidesApi.authorize({
         key: this.apikey,
         id: this.clientid,
-      })
-      console.log(response);
-    }
+      }) */
+      SlidesApi.authenticate(this.apikey, this.clientid);
+    },
   },
 }
 </script>
